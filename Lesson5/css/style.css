@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+.homework {
+    border: 1px solid #000;
+    border-radius: 50px 0px 50px 50px;
+    margin: 50px 0px 0px 50px;
+    min-height: 200px;
+    max-height: 600px;
+    background: #e8f1f7;
+    overflow: auto;
+    display: block;
+}
+
+section.homework>section {
+
+    text-align: left;
+    padding: 20px 10px 0px 20px;
+    background: #fde194;
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid #000;
+    box-shadow: inset 0px 0px 5px;
+    border-radius: 40px;
+    max-width: 250px;
+    min-width: 100px;
+    height: 200px;
+}

@@ -1,0 +1,48 @@
+div 
+{
+    border: #000;
+}
+.opensans
+{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    font-style: italic;
+}
+.linethrogh
+{
+    text-decoration: line-through;
+    font-weight: 800;
+}
+.center
+{
+    text-align: center;
+}
+.spacing_w
+{
+    color: rgb(131, 72, 170);
+    text-decoration: overline wavy;
+    text-shadow: 0px 0px 10px #000;
+    font-weight: 800;
+    
+}
+.spacing_l
+{
+    text-decoration:double underline;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+.exile
+{
+font-family: "Exile", system-ui;
+text-shadow: 10px 4px 2px #807171
+}
+.shadow
+{
+text-decoration: overline;
+letter-spacing: 2px;
+text-indent: 40px;
+text-transform: capitalize;
+text-shadow: 10px 4px 2px #c76e6e;    
+}
