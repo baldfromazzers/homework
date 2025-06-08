@@ -85,10 +85,10 @@ function calculator(num1, num2, action)
             result = num1 + num2
             break
         case '*':
-            result = num1 - num2
+            result = num1 * num2
             break
         case '/':
-            result = num1 + num2
+            result = num1 / num2
             break
     }
     console.log('Ответ:' + result)
