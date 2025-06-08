@@ -51,3 +51,45 @@ for (let i = 0; i < userList.length; i++) {
 }
 
 console.log('Кол-во пользователей без админки: ' + notAdminCont)
+
+
+// ==================================================== 101 урок
+let name = 'Alex';
+
+function Hello (name){
+   return console.log('Hello ' + name)
+}
+
+Hello (name)
+
+let numbers = [1, 14, 3, 17, 2]
+
+for ( let i = 0; i < numbers.length; i++){
+    if (numbers[i] > 10)
+    {console.log(numbers[i])}
+}
+
+num1 = 2
+num2 = 3
+action = '+'
+
+function calculator(num1, num2, action)
+{
+    let result = 0
+    switch(action)
+    {
+        case '-':
+            result = num1 - num2
+            break
+        case '+':
+            result = num1 + num2
+            break
+        case '*':
+            result = num1 - num2
+            break
+        case '/':
+            result = num1 + num2
+            break
+    }
+    console.log('Ответ:' + result)
+}
