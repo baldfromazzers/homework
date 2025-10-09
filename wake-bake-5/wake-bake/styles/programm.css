@@ -1,0 +1,195 @@
+.programm__heading {
+    gap: 60px;
+}
+
+.programm__heading__about {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+
+.programm__heading__title {
+    color: var(--general-text);
+
+    font-family: Gabriola;
+    font-size: 74px;
+    font-weight: 400;
+    line-height: 82%;
+    letter-spacing: 0%;
+    text-align: left;
+
+    margin-bottom: 20px;
+
+}
+
+.programm__heading__text {
+    color: var(--accent-text);
+    max-width: 374px;
+
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.programm__heading__tab {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    gap: 30px 20px;
+}
+
+.programm_bottom {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 40px;
+}
+
+.programm_bottom__discount {
+    display: grid;
+    grid-template: repeat(3, auto)/ .9fr .5fr;
+
+    gap: 40px;
+}
+
+.discount__main_item {
+    grid-row: 1/3;
+
+    max-height: 232px;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    border-radius: 20px;
+    background: var(--accent-bg);
+
+    padding: 40px 81px 40px 40px;
+
+    color: var(--accent-text);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.discount__main_item span {
+    color: var(--accent-color);
+    font-family: Gabriola;
+    font-size: 74px;
+    font-weight: 400;
+    line-height: 82%;
+    letter-spacing: 0%;
+    display: block;
+    text-align: start;
+
+    transform-origin: 0 0;
+    animation: discount-grow .8s linear infinite alternate;
+
+    padding: 0px 9px 0px 7px;
+
+    margin-left: 35px;
+
+}
+
+@keyframes discount-grow {
+
+    0% {
+        transform: scale(1);
+        color: var(--accent-color);
+    }
+
+    100% {
+        transform: scale(1.1);
+        color: #FF9138;
+    }
+
+}
+
+.discount__date {
+    color: var(--accent-text);
+
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+
+    text-align: end;
+}
+
+.discount__item {
+
+    color: var(--accent-text);
+    font-family: Gabriola;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 90%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.discount__item_text {
+    color: #ceaad0;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.discount__item_price {
+
+    white-space: nowrap;
+
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 90%;
+}
+
+.discount__button {
+    grid-column: 1/3;
+
+}
+
+
+.programm_img img {
+    width: 100%;
+}
+
+
+.tab__control__button {
+    padding: 14px 30px;
+
+    border-radius: 100px;
+    box-shadow: 0px 4px 20px 0px rgba(206, 195, 185, 0.3);
+    background: var(--general-bg);
+
+    transition: all .35s;
+
+    white-space: nowrap;
+}
+
+.tab__control__button--pressed {
+    background: var(--accent-bg);
+}
+
+.tab__control__button:hover {
+
+    background: var(--accent-bg);
+
+}
+
+.tab__item {
+    grid-column: 1/3;
+    display: none;
+}
+
+.tab__item--opened {
+
+    display: block;
+}
