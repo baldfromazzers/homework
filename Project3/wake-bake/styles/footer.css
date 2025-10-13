@@ -1,0 +1,151 @@
+.footer {
+    background: var(--footer-color);
+    padding: 60px 0px 0px;
+    position: relative;
+
+    color: var(--light-text);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+
+}
+
+.footer__inner {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1.2fr .9fr;
+}
+
+
+.footer__item {}
+
+.footer__item-logo {
+    position: relative;
+    top: -30px;
+}
+
+.footer__item-adress {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.footer__item-contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__item-contacts>a {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+.socials {
+    margin: 20px;
+    display: flex;
+    gap: 0px 15px;
+}
+
+.socials :first-child {
+    margin-left: -7px;
+}
+
+.socials__item {
+    min-width: 36px;
+    height: 100%;
+
+}
+
+.socials__image path {
+    transition: all .35s;
+
+}
+
+.socials__image:hover path {
+
+    fill: var(--accent-color);
+
+}
+
+.info__list {
+    position: relative;
+}
+
+.info__item {
+    padding-bottom: 20px;
+}
+
+.info__link {
+
+    z-index: 1;
+    position: relative;
+}
+
+.info__link::before {
+    content: '';
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    position: absolute;
+    bottom: 5px;
+    left: -13px;
+
+    opacity: 0;
+    transition: all 0.35s;
+    z-index: -1;
+}
+
+.info__link:hover::before {
+    opacity: 1;
+}
+
+.phone {
+
+    z-index: 1;
+    position: relative;
+}
+
+.phone::before {
+    content: '';
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    position: absolute;
+    bottom: 5px;
+    left: -13px;
+
+    opacity: 0;
+    transition: all 0.35s;
+    z-index: -1;
+}
+
+.phone:hover::before {
+    opacity: 1;
+}
+
+.info__item:last-child {
+    padding-bottom: 0px;
+}
+
+.work-hours {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    display: block;
+}
+
+.adress {
+    display: flex;
+    gap: 8px;
+}
+
+.copyright {
+    padding: 47px 0px;
+    color: var(--copyrigt-color);
+}
+
+.copyright__icon {
+    max-width: 24px;
+}
