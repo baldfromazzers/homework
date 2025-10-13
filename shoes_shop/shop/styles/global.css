@@ -60,7 +60,7 @@ body {
 }
 
 .header {
-    margin: 29px 0px
+    padding: 29px 0px
 }
 
 .main__hero, .main__shoes-prev{
@@ -147,4 +147,5 @@ body {
 
 .header--opened-burger .burger__line {
     background: none;
+
 }
