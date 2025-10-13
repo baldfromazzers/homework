@@ -1,0 +1,152 @@
+.main__hero {
+    position: relative;
+}
+
+
+.hero__swiper {
+    position: relative;
+    width: 100%;
+}
+
+.swiper {
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-wrapper {}
+
+.hero__slide {}
+
+.hero__slide-img {
+    z-index: 1;
+    margin: 20px 0px;
+    width: 40vw;
+
+    position: absolute;
+}
+
+.hero__slide-img img {
+    width: 100%;
+    height: auto;
+}
+
+
+.swiper-slide {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.swiper-slide__wrapper {
+    height: 85vh;
+    max-height: 942px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.swiper-slide__wrapper#slide-1 {
+    background: linear-gradient(-.7turn, #FFB800, #DE343D);
+}
+
+.swiper-slide__wrapper#slide-2 {
+    background: linear-gradient(-.7turn, #969090, #000);
+}
+
+.swiper-slide__wrapper#slide-3 {
+    background: linear-gradient(-.7turn, #706f6f, #ff0000);
+}
+
+.swiper-slide__wrapper#slide-4 {
+    background: linear-gradient(-.7turn, #706f6f, #370cd4);
+}
+
+.swiper-slide__wrapper#slide-2 img {
+    transform: rotateZ(-45deg);
+}
+
+.swiper-slide__wrapper#slide-3 img {
+    transform: rotateZ(-45deg);
+}
+
+.swiper-slide__wrapper#slide-4 img {
+    transform: scaleX(-1) rotate(45deg);
+    transform-origin: center;
+}
+.swiper-slide__wrapper#slide-3 .hero__slide-img {
+    bottom: 18%;
+}
+
+
+.swiper-slide__wrapper p {
+    font-family: 'Monument Extended', sans-serif;
+    font-weight: 400;
+    font-size: 18vw;
+    line-height: 1;
+    letter-spacing: -6.5%;
+    color: rgba(255, 255, 255, 0.14);
+    text-align: center;
+
+    position: absolute;
+    top: 29%;
+    right: 0%;
+    z-index: 0;
+    white-space: nowrap;
+}
+
+.swiper-slide__wrapper p img {
+    position: absolute;
+    bottom: 20%;
+    right: 40%;
+}
+
+
+.hero__pagination.swiper-pagination {
+    position: absolute;
+    bottom: 50%;
+    left: -48%;
+    transform: rotateZ(90deg);
+    z-index: 100;
+}
+
+
+.swiper-pagination-bullet {
+    width: 18px;
+    height: 18px;
+    margin: 16px;
+    border-radius: 100%;
+
+    transition: var(--transition);
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+.hero__pagination .swiper-pagination-bullet::after {
+    content: '';
+    position: absolute;
+    top: -50px;
+    transform: translate(-50%, 0);
+    width: 4px;
+    height: 60px;
+    background: transparent;
+    border-radius: 2px;
+
+    transition: var(--transition);
+}
+
+.hero__pagination .swiper-pagination-bullet-active::after {
+    transform: translate(-60%, 0) scaleY(1);
+    background: #fff;
+}
+
+
+.hero__button {
+    position: absolute;
+    z-index: 1;
+
+    bottom: 9%;
+    right: 9%;
+}
