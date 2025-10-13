@@ -1,0 +1,154 @@
+.main__shoes-prev {}
+
+.shoes-prev {}
+
+.shoes-prev__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.shoes-prev__title {
+    text-align: center;
+    color: var(--accent-text);
+    font-family: Monument Extended;
+    font-size: 37.72px;
+    font-weight: 400;
+    line-height: 40.2px;
+    letter-spacing: 0px;
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.shoes-prev__swiper {
+    position: relative;
+    overflow: clip;
+
+    margin-bottom: 76px;
+}
+
+.shoes-prev__swiper-wrapper {}
+
+.swiper-wrapper {}
+
+.shoes-prev__slide {
+    max-height: 531px;
+    text-wrap: nowrap;
+}
+
+
+.shoes-prev__slide-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    gap: 6px;
+}
+
+.shoes-prev__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vw;
+    overflow: hidden;
+    max-width: 401px;
+    padding: 7px;
+
+    background: var(--accent-bg);
+}
+
+.shoes-prev__img img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.brand {
+    color: rgba(156, 156, 156, 1);
+    font-family: Monument Extended;
+    font-size: 1.3vw;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1.57px;
+}
+
+.shoes-name {
+    color: rgba(4, 4, 4, 1);
+    font-family: Monument Extended;
+    font-size: 1.5vw;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.shoes-cost {
+    color: rgba(4, 4, 4, 1);
+    font-family: Monument Extended;
+    font-size: 1.2;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.shoes-size {
+    color: rgba(222, 52, 61, 1);
+
+    font-family: Monument Extended;
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 1.57px;
+    text-align: left;
+}
+
+.shoes-prev__prev,
+.shoes-prev__next {
+    display: block;
+    max-width: 58px;
+    max-height: 58px;
+    position: absolute;
+    z-index: 2;
+
+    cursor: pointer;
+
+    bottom: -35%;
+}
+
+.shoes-prev__prev path,
+.shoes-prev__next path {
+
+    fill: rgba(156, 156, 156, 1);
+
+    transition: var(--transition);
+}
+
+.shoes-prev__prev:hover path,
+.shoes-prev__next:hover path {
+    fill: #464646;
+}
+
+.shoes-prev__prev.swiper-button-disabled path,
+.shoes-prev__next.swiper-button-disabled path {
+    fill: #808080;
+}
+
+
+
+.shoes-prev__prev {
+    left: 30px;
+}
+
+.shoes-prev__next {
+    right: 30px;
+}
+
+.shoes-prev__button {
+    flex-grow: 0;
+    align-self: center;
+    justify-self: center;
+
+    border-color: #DEDEDE;
+    color: #DEDEDE;
+}
