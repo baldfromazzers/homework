@@ -23,7 +23,7 @@
 .shoes-prev__swiper {
     position: relative;
     overflow: clip;
-
+    max-height: 600px;
     margin-bottom: 76px;
 }
 
@@ -152,3 +152,4 @@
     border-color: #DEDEDE;
     color: #DEDEDE;
 }
+
