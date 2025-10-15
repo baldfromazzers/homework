@@ -6,7 +6,7 @@
     background: url(../img/decor/bg-image.png) no-repeat center center / cover;
     opacity: .7;
     max-height: 940px;
-    height: 50vw;
+    height: 60vw;
 
 
     position: relative;
@@ -33,4 +33,5 @@
     position: absolute;
     bottom: 20%;
     right: 40%;
+
 }
