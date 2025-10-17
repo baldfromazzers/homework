@@ -1,0 +1,186 @@
+.catalog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
+
+    padding-bottom: 398px;
+}
+
+.catalog__head {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1333px;
+    width: 100vw;
+
+    margin-bottom: 100px;
+    height: 51px;
+}
+
+.catalog__title {
+    text-align: center;
+    color: var(--accent-text);
+    font-family: Monument Extended;
+    font-size: 37.72px;
+    font-weight: 400;
+    line-height: 40.2px;
+    letter-spacing: 0px;
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.filters {
+    display: flex;
+    gap: 30px;
+}
+
+.catalog__filters {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    background: transparent;
+
+    padding: 8px 32px 8px 12px;
+
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.filters__controls {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    border: 1px solid #DEDEDE;
+    color: #DEDEDE;
+    transition: var(--transition);
+}
+
+
+.filters__controls:hover {
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+
+.view__selector {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.view__selector .grid,
+.view__selector .list {
+    background: transparent;
+    border: 1px solid #DEDEDE;
+    padding: 12px;
+}
+
+.catalog__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    transition: var(--transition);
+
+    margin-bottom: 35px;
+}
+
+.card__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vw;
+    overflow: hidden;
+    max-width: 401px;
+    padding: 7px;
+
+    background: var(--accent-bg);
+}
+
+.card__img img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.mix img {
+    transition: var(--transition);
+}
+
+.mix:hover img {
+    transform: scale(1.05);
+}
+
+.mix-hidden {
+    display: none;
+}
+
+.catalog__list.list-view {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog__list.list-view .mix {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: left;
+    border: 1px solid var(--general-text);
+}
+
+.catalog__list.list-view .card__img {
+    flex: 0 0 200px;
+    background: transparent;
+}
+
+
+.sort {
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #DEDEDE;
+    color: #DEDEDE;
+    background: transparent;
+
+    transition: var(--transition);
+}
+
+.sort:hover {
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+.sort svg p {
+    fill: rgb(0, 0, 0);
+}
+
+.sort:hover {
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+.catalog__list .card__img img {
+    object-fit: contain;
+    max-height: 239px;
+}
+
+.catalog__button {
+    color: var(--general-text);
+    background: var(--general-bg);
+    border-color: var(--general-text);
+
+    justify-self: center;
+    align-self: center;
+
+}
+
+.catalog__button:hover {
+    color: var(--focus-color);
+}

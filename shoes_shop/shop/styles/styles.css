@@ -1,0 +1,479 @@
+@import url(./reset.css);
+@import url(./fonts.css);
+@import url(./swiper-bundle.min.css);
+@import url(./global.css);
+
+@import url(./header.css);
+@import url(./hero.css);
+@import url(./shoes-prev.css);
+@import url(./brand-intro.css);
+@import url(./promo.css);
+@import url(./cards.css);
+@import url(./footer.css);
+@import url(./marquee.css);
+
+
+@media (max-width: 1300px) {
+    .main__brand-intro {
+        margin: 70px 0px 170px;
+    }
+
+    .title-word-img img {
+        transform: translateY(40%);
+    }
+
+    .title-word-img::after {
+        top: 40%;
+        left: 8%;
+    }
+
+    .title-word-img:nth-child(4) img {
+        transform: translateY(-10%) translateX(25%);
+    }
+
+    .title-word-img:nth-child(4)::after {
+        top: 30%;
+        left: 8%;
+    }
+
+    .title-word-img:last-child img {
+        transform: translateX(8%);
+    }
+
+    .title-word-img:last-child::after {
+        top: 30%;
+        left: 8%;
+    }
+
+    /* ================================ */
+    .catalog {
+        padding-bottom: 100px
+    }
+
+    .footer__nav-list {
+        gap: 10px;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .brand {
+        font-size: 1.5vw;
+    }
+
+    .shoes-name {
+        font-size: 1.7vw;
+    }
+
+    .shoes-cost {
+        font-size: 1.5;
+    }
+
+    .shoes-size {
+        font-size: 1.2vw;
+    }
+
+    /* ========================== */
+
+    .brand-intro__title {
+        gap: 0px 0px
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .header__nav {
+        justify-content: start;
+    }
+
+    /*swiper ======================================== */
+    .swiper-slide__wrapper {
+        height: 60vh;
+    }
+
+    /* ============================================== */
+    .shoes-prev__nav {
+        bottom: 90%;
+        justify-content: end;
+        margin: 0px;
+        gap: 40px;
+    }
+
+    /* ============================================= */
+
+    .title-word-img:last-child img {
+        width: 7vw;
+        transform: translateY(30%) translateX(8%);
+    }
+
+    .title-word-img:last-child::after {
+        top: 35%;
+        left: 8%;
+    }
+
+}
+
+
+@media (max-width: 860px) {
+
+    .header--opened-burger .burger__menu {
+        transition: var(--transition);
+    }
+
+    .header--opened-burger .burger__menu {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    .nav__wrapper {
+        display: none;
+    }
+
+    .burger__icon {
+        display: block;
+    }
+
+
+    /*hero =================================================== */
+    .hero__slide-img {
+        width: 52vw;
+    }
+
+    /* ========================================= */
+
+    .title-word-img img {
+        transform: translateY(20%);
+    }
+
+    .title-word-img::after {
+        top: 24%;
+        left: 8%;
+    }
+
+    .title-word-img:nth-child(4) img {
+        transform: translateY(-20%) translateX(25%);
+    }
+
+    .title-word-img:nth-child(4)::after {
+        top: 20%;
+        left: 8%;
+    }
+
+    .title-word-img:last-child img {
+        transform: translateY(0%) translateX(8%);
+    }
+
+    .title-word-img:last-child::after {
+        top: 30%;
+        left: 8%;
+    }
+
+    .brand-intro {
+        font-size: 7vw;
+    }
+
+    .main__shoes-prev {
+        padding-bottom: 30px;
+    }
+
+    .brand-container {
+        padding: 0px;
+    }
+
+    .brand-intro__title {
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* ========================================= */
+    .marquee__text {
+        font-size: 4vw;
+    }
+
+    /* ========================================= */
+    .catalog__head {
+        flex-direction: column;
+    }
+
+    /* =========================================  */
+    .footer__nav {
+        gap: 50px;
+        justify-content: start;
+    }
+
+    .footer {
+        height: 232px;
+        font-size: 17px;
+    }
+
+    .footer__nav {
+        padding: 0px;
+
+    }
+
+    .footer__nav-list>p {
+        margin-bottom: 10px;
+    }
+
+    .company__nav-item {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 800px) {
+    .button {
+        font-size: 12px;
+    }
+
+    /* ====================================== */
+    .swiper-slide__wrapper {
+        height: 45vh
+    }
+
+    /* ======================================= */
+}
+
+
+@media (max-width: 750px) {
+
+    .main__hero,
+    .main__shoes-prev {
+        padding-bottom: 30px;
+    }
+
+    .shoes-prev__swiper {
+        margin-bottom: 30px;
+    }
+
+    .shoes-prev__title {
+        margin-bottom: 15px;
+        font-size: 5vw;
+    }
+
+    .shoes-prev__prev svg,
+    .shoes-prev__next svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .brand {
+        font-size: 1.7vw;
+    }
+
+    .shoes-name {
+        font-size: 1.9vw;
+    }
+
+    .shoes-cost {
+        font-size: 1.7vw;
+    }
+
+    .shoes-size {
+        font-size: 1.4vw;
+    }
+
+    /* ============================================== */
+
+}
+
+
+@media (max-width: 610px) {
+    .button {
+        padding: 0px 7px;
+    }
+
+    /* ====================================== */
+    .shoes-prev__img {
+        height: 30vw;
+    }
+
+    .brand {
+        font-size: 2.4vw;
+    }
+
+    .shoes-name {
+        font-size: 2.4vw;
+    }
+
+    .shoes-cost {
+        font-size: 2.1vw;
+    }
+
+    .shoes-size {
+        font-size: 1.9vw;
+    }
+
+    /* ======================================== */
+
+    .title-word-img img {
+        transform: translateY(30%);
+    }
+
+    .title-word-img::after {
+        top: 40%;
+    }
+
+    .title-word-img:nth-child(4) img {
+        transform: translateY(0%) translateX(25%);
+    }
+
+    .title-word-img:nth-child(4)::after {
+        top: 40%;
+    }
+
+    .title-word-img:last-child img {
+        transform: translateY(10%) translateX(8%);
+    }
+
+    .title-word-img:last-child::after {
+        top: 30%;
+        left: 8%;
+    }
+
+    .brand-intro__logos {
+        margin-top: 70px;
+
+        gap: 30px;
+    }
+
+    /* ----------------------------------------- */
+    .catalog__list {
+        gap: 20px;
+    }
+
+    .filters {
+        gap: 10px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .main__brand-intro {
+        margin: 70px 0px 70px;
+    }
+
+    .swiper-slide__wrapper {
+        height: 36vh;
+    }
+
+    .hero__slide-img {
+        width: 36vh;
+    }
+
+
+    /* ============================================================= */
+
+    .shoes-prev__prev svg,
+    .shoes-prev__next svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .shoes-prev__slide-wrapper p {
+        margin-bottom: -7px;
+    }
+
+    .shoes-prev__img {
+        height: 40vw;
+        width: 40vw;
+    }
+
+    .brand {
+        font-size: 3vw;
+    }
+
+    .shoes-name {
+        font-size: 3.2vw;
+    }
+
+    .shoes-cost {
+        font-size: 3.1vw;
+    }
+
+    .shoes-size {
+        font-size: 2.7vw;
+    }
+
+    /* ================== */
+    .marquee__text {
+        font-size: 4vw;
+    }
+
+    /* ================================================== */
+
+    .catalog__list {
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ================================================== */
+    .catalog__filters {
+        padding: 0px;
+    }
+
+    .view__selector {
+        display: none;
+    }
+
+    /* =================================================  */
+
+    .footer {
+        font-size: 13px;
+    }
+
+    .footer__nav-list {
+        gap: 0px;
+    }
+
+    .footer__nav{
+        gap: 10px;
+    }
+
+    .company__nav-item {
+        font-size: 9px;
+    }
+}
+
+
+
+@media (max-width: 400px) {
+
+    .shoes-prev__img {
+        height: 50vw;
+        width: 65vw;
+    }
+
+    .brand {
+        font-size: 3.5vw;
+    }
+
+    .shoes-name {
+        font-size: 3.7vw;
+    }
+
+    .shoes-cost {
+        font-size: 3.6vw;
+    }
+
+    .shoes-size {
+        font-size: 3.2vw;
+    }
+
+    .shoes-prev__nav {
+        bottom: 80%;
+    }
+
+    .shoes-prev__prev svg,
+    .shoes-prev__next svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    /* ============================================= */
+
+    .brand-intro {
+        line-height: 40px;
+    }
+}

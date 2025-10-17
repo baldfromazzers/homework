@@ -1,0 +1,35 @@
+.footer {
+    background: var(--accent-bg);
+    height: 432px;
+
+    color: var(--accent-text);
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-wrap: nowrap;
+}
+
+.footer__nav {
+    display: flex;
+    padding: 108px 146px 109px;
+    justify-content: end;
+    gap: 100px;
+}
+
+.footer__nav-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+.footer__nav-list >p {
+    margin-bottom: 30px;
+}
+
+.company__nav-item {
+    font-weight: 400;
+    font-size: 18px;
+}
